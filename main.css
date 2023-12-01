@@ -1,0 +1,39 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    background: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background: #444;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+/* Main Content Styling */
+main {
+    padding: 1rem;
+}
+
+/* Footer Styling */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
