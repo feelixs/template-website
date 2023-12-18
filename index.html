@@ -23,20 +23,75 @@
         <h1>Welcome to My Website</h1>
     </header>
     <main>
+        <!-- image slideshow -->
         <div class="img-contained-box">
             <div class="Slideshow">
-               <!--<img src="https://raw.githubusercontent.com/mike-fmh/template-website/test/src/IMG_5214.jpeg">-->
+               <img class="slide-img" src="https://raw.githubusercontent.com/mike-fmh/template-website/f8f957999a9a6e109f046b694d8053667619bc98/src/IMG_5044.jpeg">
+            </div>
+            <div class="Slideshow">
                <img class="slide-img" src="https://raw.githubusercontent.com/mike-fmh/template-website/test/src/IMG_5206.jpeg">
-               <!--<img class="slide-img" src="https://raw.githubusercontent.com/mike-fmh/template-website/f8f957999a9a6e109f046b694d8053667619bc98/src/IMG_5044.jpeg">-->
+            </div>
+            <div class="Slideshow">
+               <img class="slide-img" src="https://raw.githubusercontent.com/mike-fmh/template-website/test/src/IMG_5214.jpeg">
+            </div>
+            <div class="Slideshow">
+               <img class="slide-img" src="https://raw.githubusercontent.com/mike-fmh/template-website/b8e05a4388f4864f1c5e75e969a21ada584b478d/src/IMG_4982.jpeg">
             </div>
         </div>
 
-        <div class="contained-box">
-        <p>Kgjawhdkahdkjhjhn</p></div>
+        <!-- image dots -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
 
+        <!-- slideshow controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="content-contained-box">
+            <p>test text</p>
+        </div>
     </main>
+
+
+
     <footer>
         <!-- Footer content here -->
     </footer>
 </body>
+
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("Slideshow");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+
+
+</script>
 </html>
