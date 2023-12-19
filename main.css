@@ -250,22 +250,24 @@ nav ul li a:hover {
     text-decoration-line: underline;
 }
 
-.mobile-view {
-    display: none;
+.info-contained-box p {
+    white-space: normal;
 }
 
-.desktop-view {
-    display: block;
+.flex-container-only-desktop {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
 }
 
 /* MOBILE VIEW */
 @media (max-width: 1200px) {
-    .mobile-view {
+    .flex-container-only-desktop {
         display: block;
-    }
-
-    .desktop-view {
-        display: none;
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: initial;
     }
 
     .flex-container {
