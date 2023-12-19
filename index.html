@@ -10,8 +10,8 @@
     <nav>
         <div class="nav-content">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="#bio">About</a></li>
+                <li><a href="#events">Events</a></li>
                 <li><a href="merch.html">Merch</a></li>
             </ul>
             <div class="logo">
@@ -25,8 +25,8 @@
         <img src="./assets/Untitled.webp">
     </div>
 
-    <header>
-        <h1>Welcome to My Website</h1>
+    <header id="bio">
+        <h1>About Us</h1>
     </header>
     <main>
         <!-- image slideshow -->
@@ -56,22 +56,27 @@
         <div class="content-contained-box">
             <p>test text</p>
         </div>
+
+        <header id="events">
+            <h1>Upcoming Events</h1>
+        </header>
+        <div class="calender-box">
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showTitle=0&showNav=0&showDate=1&showPrint=0&showTabs=0&showCalendars=0&src=bW1mbWg0QGdtYWlsLmNvbQ&color=%23039BE5" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
     </main>
-
-
-
-    <footer>
-        <!-- Footer content here -->
-    </footer>
 </body>
+
+<footer>
+    <p>&copy; 2023</p>
+</footer>
 
 
 <script>
     let slideIndex = 1;
     showSlides(slideIndex);
 
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
+    function changeSlide(by) {
+      showSlides(slideIndex += by);
     }
 
     function currentSlide(n) {
