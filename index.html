@@ -12,11 +12,9 @@
             <ul>
                 <li><a href="#bio">About</a></li>
                 <li><a href="#events">Events</a></li>
-                <li><a href="merch.html">Merch</a></li>
+                <li><a target="_blank" href="https://patreon.com">Patreon</a></li>
             </ul>
-            <div class="logo">
-                <img src="logo.png" alt="Logo">
-            </div>
+
         </div>
     </nav>
 
@@ -26,41 +24,71 @@
     </div>
 
     <header id="bio">
-        <h1>About Us</h1>
+        <h1>our members</h1>
     </header>
     <main>
+        <!-- ABOUT BIOS -->
+        <div class="flex-container">
+            <div class="info-contained-box">
+                <p class="info-title">Marco Spindola</p>
+                <p>About about about</p>
+            </div>
+            <div class="info-contained-box">
+                <img src="./assets/5044.webp">
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="info-contained-box">
+                <p class="info-title">Carmen Mañon</p>
+                <p>About about about</p>
+            </div>
+            <div class="info-contained-box">
+                <img src="./assets/5044.webp">
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="info-contained-box">
+                <p class="info-title">Nikolas Carter</p>
+                <p>About about about</p>
+            </div>
+            <div class="info-contained-box">
+                <img src="./assets/5044.webp">
+            </div>
+        </div>
+
+
         <!-- image slideshow -->
-        <div class="img-contained-box">
-            <div class="Slideshow">
-               <img class="slide-img" src="./assets/TEST-1.webp">
+            <div class="dark bottom-padding">
+            <div class="img-contained-box">
+                <div class="Slideshow">
+                   <img class="slide-img" src="./assets/TEST-1.webp">
+                </div>
+                <div class="Slideshow">
+                   <img class="slide-img" src="./assets/5044.webp">
+                </div>
+                <div class="Slideshow">
+                   <img class="slide-img" src="./assets/5206.webp">
+                </div>
+                <div class="Slideshow">
+                   <img class="slide-img" src="./assets/5214.webp">
+                </div>
+                <div class="Slideshow">
+                   <img class="slide-img" src="./assets/4982.webp">
+                </div>
             </div>
-            <div class="Slideshow">
-               <img class="slide-img" src="./assets/5044.webp">
-            </div>
-            <div class="Slideshow">
-               <img class="slide-img" src="./assets/5206.webp">
-            </div>
-            <div class="Slideshow">
-               <img class="slide-img" src="./assets/5214.webp">
-            </div>
-            <div class="Slideshow">
-               <img class="slide-img" src="./assets/4982.webp">
+
+            <!-- image navigation -->
+            <div style="text-align:center">
+                <span class="image-preview" onclick="currentSlide(1)"></span>
+                <span class="image-preview" onclick="currentSlide(2)"></span>
+                <span class="image-preview" onclick="currentSlide(3)"></span>
+                <span class="image-preview" onclick="currentSlide(4)"></span>
+                <span class="image-preview" onclick="currentSlide(5)"></span>
             </div>
         </div>
+        <span class="blank-space"></span>
 
-        <!-- image dots -->
-        <div style="text-align:center">
-            <span class="image-preview" onclick="currentSlide(1)"></span>
-            <span class="image-preview" onclick="currentSlide(2)"></span>
-            <span class="image-preview" onclick="currentSlide(3)"></span>
-            <span class="image-preview" onclick="currentSlide(4)"></span>
-            <span class="image-preview" onclick="currentSlide(5)"></span>
-        </div>
-
-        <div class="content-contained-box">
-            <p>test text</p>
-        </div>
-
+        <!-- events calendar -->
         <header id="events">
             <h1>Upcoming Events</h1>
         </header>
@@ -102,7 +130,5 @@
       slides[slideIndex-1].style.display = "block";
       dots[slideIndex-1].className += " active";
     }
-
-
 </script>
 </html>
