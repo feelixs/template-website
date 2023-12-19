@@ -6,7 +6,6 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Navigation Bar Styling */
 nav {
     z-index: 1;
     overflow: hidden;
@@ -46,8 +45,7 @@ nav ul li a:hover {
 header {
     background: #444;
     color: white;
-    padding: 1rem 0;
-    text-align: center;
+    padding: 1rem 0 1rem 20vw;
 }
 
 /* Main Content Styling */
@@ -57,11 +55,11 @@ main {
 
 /* Footer Styling */
 footer {
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 1rem 0;
     position: absolute;
-    bottom: 0;
     width: 100%;
 }
 
@@ -149,6 +147,18 @@ nav ul li a:hover {
     box-shadow: none;
     flex-basis: 100%;
 }
+
+.calender-box {
+    border: none;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: none;
+    flex-basis: 100%;
+    text-align: center;
+}
+
 
 .img-contained-box {
     border: none;
