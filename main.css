@@ -148,7 +148,7 @@ nav ul li a:hover {
     flex-basis: 100%;
 }
 
-.calender-box {
+.calendar-box {
     border: none;
     background-color: #f4f4f4;
     padding: 20px;
@@ -157,6 +157,11 @@ nav ul li a:hover {
     box-shadow: none;
     flex-basis: 100%;
     text-align: center;
+}
+
+#events-calendar {
+    height: 80vh;
+    width: 80vw;
 }
 
 
