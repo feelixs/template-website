@@ -298,5 +298,11 @@ nav ul li a:hover {
         border-radius: 5px;
         box-shadow: none;
         flex-basis: 100%;
+        text-align: center;
+    }
+
+    .info-contained-box img {
+        width: 400px;
+        height: 400px;
     }
 }
