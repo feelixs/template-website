@@ -187,7 +187,6 @@ nav ul li a:hover {
     transition: 0.6s ease;
     user-select: none;
     background-color: #959695;
-    transform: translateY(100%);
 }
 
 .prev:hover, .next:hover {
