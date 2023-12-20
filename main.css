@@ -1,13 +1,12 @@
 /* Installed Fonts */
 @font-face { font-family: Delicious; src: url('./fonts/Rubik_Doodle_Shadow/RubikDoodleShadow-Regular.ttf'); }
-
+@font-face { font-family: Outfit; src: url('./fonts/Outfit/Outfit-VariableFont_wght.ttf');}
 /* General Body Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Outfit, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-
 }
 
 /* Main Content Styling */
