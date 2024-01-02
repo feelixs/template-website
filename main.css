@@ -104,6 +104,15 @@ nav ul li a:hover {
     max-width: 100vw;
 }
 
+.home-img img {
+    max-width: 100vw;
+}
+
+.home-img p {
+    /* if we want text to appear over the images */
+    /*transform: translate(-20%, -100%);*/
+}
+
 .flex-container {
     display: flex;
     padding-left: 25vw;
