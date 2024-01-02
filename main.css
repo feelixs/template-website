@@ -1,6 +1,9 @@
+/* Installed Fonts */
+@font-face { font-family: Delicious; src: url('./fonts/Rubik_Doodle_Shadow/RubikDoodleShadow-Regular.ttf'); }
+@font-face { font-family: Outfit; src: url('./fonts/Outfit/Outfit-VariableFont_wght.ttf');}
 /* General Body Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Outfit, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -13,6 +16,7 @@ main {
 
 /* Header Styling */
 header {
+    font-family: Delicious, sans-serif;
     background: #444;
     color: white;
     padding: 1rem 0 1rem 20vw;
@@ -76,11 +80,19 @@ nav ul li a:hover {
     height: 50px;
 }
 
+.splash-logo h1 {
+    font-size: 4em;
+}
+
 .dark {
     background: #444;
 }
 
-.bottom-padding {
+.padding-top {
+    padding-top: 10vh;
+}
+
+.padding-bottom {
     padding-bottom: 5vh;
 }
 
