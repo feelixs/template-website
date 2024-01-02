@@ -1,6 +1,6 @@
 /* Installed Fonts */
-@font-face { font-family: Delicious; src: url('assets/fonts/Rubik_Doodle_Shadow/RubikDoodleShadow-Regular.ttf'); }
-@font-face { font-family: Outfit; src: url('assets/fonts/Outfit/Outfit-VariableFont_wght.ttf');}
+@font-face { font-family: Delicious; src: url('./assets/fonts/Rubik_Doodle_Shadow/RubikDoodleShadow-Regular.ttf'); }
+@font-face { font-family: Outfit; src: url('./assets/fonts/Outfit/Outfit-VariableFont_wght.ttf');}
 /* General Body Styling */
 body {
     font-family: Outfit, sans-serif;

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Web Page</title>
-    <link rel="stylesheet" href="main.css">
+    <!--<link rel="stylesheet" href="../../static/main.css">-->
+    <link rel="stylesheet" href="{% static 'main.css' %}">
 </head>
 <body>
     <nav>
@@ -25,7 +27,7 @@
     </header>
     <div id="splash">
         <!-- splash image -->
-        <img src="./assets/Untitled.webp">
+        <img src="../static/assets/Untitled.webp">
     </div>
 
     <header id="bio">
@@ -39,7 +41,7 @@
                 <p>About about about</p>
             </div>
             <div class="info-contained-box">
-                <img src="./assets/5044.webp">
+                <img src="../static/assets/5044.webp">
             </div>
         </div>
         <div class="flex-container-only-desktop">
@@ -48,7 +50,7 @@
                 <p>About about about</p>
             </div>
             <div class="info-contained-box">
-                <img src="./assets/5044.webp">
+                <img src="../static/assets/5044.webp">
             </div>
         </div>
         <div class="flex-container-only-desktop">
@@ -57,7 +59,7 @@
                 <p class="info-text">About about about</p>
             </div>
             <div class="info-contained-box">
-                <img src="./assets/5044.webp">
+                <img src="../static/assets/5044.webp">
             </div>
         </div>
 
@@ -65,22 +67,22 @@
             <div class="dark padding-bottom">
             <div class="img-contained-box">
                 <div class="Slideshow">
-                   <img class="slide-img" src="./assets/astrik.webp">
+                   <img class="slide-img" src="../static/assets/astrik.webp">
                 </div>
                 <div class="Slideshow">
-                   <img class="slide-img" src="./assets/TEST-1.webp">
+                   <img class="slide-img" src="../static/assets/TEST-1.webp">
                 </div>
                 <div class="Slideshow">
-                   <img class="slide-img" src="./assets/5044.webp">
+                   <img class="slide-img" src="../static/assets/5044.webp">
                 </div>
                 <div class="Slideshow">
-                   <img class="slide-img" src="./assets/5206.webp">
+                   <img class="slide-img" src="../static/assets/5206.webp">
                 </div>
                 <div class="Slideshow">
-                   <img class="slide-img" src="./assets/5214.webp">
+                   <img class="slide-img" src="../static/assets/5214.webp">
                 </div>
                 <div class="Slideshow">
-                   <img class="slide-img" src="./assets/4982.webp">
+                   <img class="slide-img" src="../static/assets/4982.webp">
                 </div>
             </div>
 
